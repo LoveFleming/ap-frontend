@@ -18,7 +18,7 @@ const Exception403 = lazy(() =>
 );
 //const Exception403 = lazy(() => import("#src/pages/exception/403"));
 const Exception404 = lazy(() => import("#src/pages/exception/404"));
-const Exception500 = lazy(() => import("#src/pages/exception/500"));
+const Exception500 = lazy(() => import("#src/pages/exception/500/index.js"));
 const ExceptionUnknownComponent = lazy(() => import("#src/pages/exception/unknown-component"));
 
 const EnglishArticleRemotePage = lazy(() => import("#src/pages/english"));

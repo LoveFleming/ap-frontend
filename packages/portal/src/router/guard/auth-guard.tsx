@@ -103,9 +103,9 @@ export function AuthGuard({ children }: AuthGuardProps) {
 			 * @zh 启用了前端路由
 			 * @en If frontend routing is enabled
 			 */
-			if (enableFrontendAceess) {
-				routes.push(...generateRoutesByFrontend(accessRoutes, latestRoles));
-			}
+			//if (enableFrontendAceess) {
+			//	routes.push(...generateRoutesByFrontend(accessRoutes, latestRoles));
+			//}
 
 			const uniqueRoutes = removeDuplicateRoutes(routes);
 			setAccessStore(uniqueRoutes);

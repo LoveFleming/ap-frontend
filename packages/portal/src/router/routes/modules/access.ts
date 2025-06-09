@@ -10,7 +10,6 @@ import { lazy } from "react";
 const PageControl = lazy(() => import("#src/pages/access/page-control"));
 const ButtonControl = lazy(() => import("#src/pages/access/button-control"));
 const AdminVisible = lazy(() => import("#src/pages/access/admin-visible"));
-const CommonVisible = lazy(() => import("#src/pages/access/common-visible"));
 
 
 
@@ -53,15 +52,7 @@ const routes: AppRouteRecordRaw[] = [
 					roles: ["admin"],
 				},
 			},
-			{
-				path: "/access/common-visible",
-				Component: CommonVisible,
-				handle: {
-					icon: "EyeOutlined",
-					title: $t("common.menu.commonVisible"),
-					roles: ["common"],
-				},
-			},
+
 		],
 	},
 ];

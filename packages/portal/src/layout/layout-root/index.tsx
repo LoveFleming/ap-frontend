@@ -1,7 +1,7 @@
 import { PageError } from "#src/components";
 import { usePreferences } from "#src/hooks";
 import { AuthGuard } from "#src/router/guard";
-import { whiteRouteNames } from "#src/router/routes";
+//import { whiteRouteNames } from "#src/router/routes";
 import { useAuthStore, useUserStore } from "#src/store";
 import { isString, NProgress, toggleHtmlClass } from "#src/utils";
 
@@ -31,6 +31,7 @@ export default function LayoutRoot() {
 		 * @zh authGuardDependencies 为将要请求用户信息的 useEffect 的依赖项，如果为 true 当前路由为 404 路由，则不替换 document.title
 		 * @en authGuardDependencies is the dependency of useEffect that will request user information. If it's true,
 		 */
+		/*
 		const authGuardDependencies = !whiteRouteNames.includes(location.pathname) && isLogin && !isAuthorized;
 		if (!authGuardDependencies) {
 			const currentRoute = matches[matches.length - 1];
@@ -38,6 +39,7 @@ export default function LayoutRoot() {
 			const newTitle = isString(documentTitle) ? documentTitle : documentTitle?.props?.children;
 			document.title = t(newTitle) || document.title;
 		}
+		*/
 	}, [enableDynamicTitle, language, location]);
 
 	/* tailwind theme */
