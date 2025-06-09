@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 
 export const zh = defineConfig({
 	lang: "zh-Hans",
-	description: "React Antd Admin | 企业级管理系统框架",
+	description: "Advance Package | 企业级管理系统框架",
 
 	themeConfig: {
 		nav: nav(),

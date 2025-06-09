@@ -59,7 +59,7 @@ export const DEFAULT_PREFERENCES = {
 	sidebarTheme: "light",
 
 	/* ================== Footer ================== */
-	enableFooter: true,
+	enableFooter: false,
 	fixedFooter: true,
 	companyName: "Condor Hero",
 	companyWebsite: "http://github.com/condorheroblog/",

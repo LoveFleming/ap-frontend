@@ -78,6 +78,8 @@ export default function LayoutHeader({ className, children }: LayoutHeaderProps)
 				</div>
 
 				<div className="flex items-center">
+					<LanguageButton {...buttonProps} />
+					{/*
 					<GlobalSearch />
 					<Preferences {...buttonProps} />
 					<ThemeButton {...buttonProps} />
@@ -85,6 +87,7 @@ export default function LayoutHeader({ className, children }: LayoutHeaderProps)
 					<FullscreenButton {...buttonProps} target={document.documentElement} />
 					<NotificationContainer {...buttonProps} />
 					<UserMenu {...buttonProps} />
+					*/}
 				</div>
 			</header>
 		</ConfigProvider>

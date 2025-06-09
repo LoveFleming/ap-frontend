@@ -186,6 +186,7 @@ export function GlobalSearch() {
 
 	return (
 		<>
+
 			<div
 				onClick={() => setOpen(open => !open)}
 				className="group flex justify-center items-center gap-2 md:bg-colorBgLayout px-3 py-1.5 rounded-full cursor-pointer text-colorTextSecondary hover:text-colorText md:mr-2.5"
@@ -199,6 +200,7 @@ export function GlobalSearch() {
 					<kbd>K</kbd>
 				</span>
 			</div>
+
 
 			<Modal
 				open={open}
