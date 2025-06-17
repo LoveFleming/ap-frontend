@@ -11,12 +11,13 @@ export default defineConfig({
     plugins: [
         react(),
         federation({
-            name: 'englishArticle',
+            name: 'english',
             filename: 'remoteEntry.js',
             exposes: {
                 './App': './src/App.tsx',
                 './IrregularVerbTable': './src/components/IrregularVerbTable.tsx',
-                './ArticlePractice': './src/components/ArticlePractice.tsx'
+                './ArticlePractice': './src/components/ArticlePractice.tsx',
+                './Vocab1200': './src/components/Vocab1200.tsx'
             },
             shared: ['react', 'react-dom']
         })

@@ -32,7 +32,7 @@ export default defineConfig({
 		react(),
 		federation({
 			remotes: {
-				englishArticle: "http://localhost:5173/assets/remoteEntry.js",
+				english: "http://localhost:5173/assets/remoteEntry.js",
 			},
 			shared: ["react", "react-dom"]
 		}),

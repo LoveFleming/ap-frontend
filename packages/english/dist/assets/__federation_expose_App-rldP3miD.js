@@ -1,7 +1,7 @@
 import { importShared } from './__federation_fn_import-gVVR6EuA.js';
 import { j as jsxRuntimeExports } from './jsx-runtime-CyoIsdjr.js';
-import IrregularVerbTable from './__federation_expose_IrregularVerbTable-YTf_N7TS.js';
-import ArticlePractice from './__federation_expose_ArticlePractice-Csxrr3Oe.js';
+import IrregularVerbTable from './__federation_expose_IrregularVerbTable-DdGGrbGB.js';
+import ArticlePractice from './__federation_expose_ArticlePractice-CULSXHm7.js';
 
 const {useState} = await importShared('react');
 const App = () => {

@@ -14,7 +14,7 @@ import { NProgress } from "#src/utils";
 
 import { createBrowserRouter, createHashRouter } from "react-router";
 import { ROOT_ROUTE_ID } from "./constants";
-import { baseRoutes } from "./routes";
+import { accessRoutes, baseRoutes } from "./routes";
 
 // 记录已经加载的页面
 const loadedPaths = new Set<string>();
@@ -24,7 +24,7 @@ export const rootRoute: RouteObject[] = [
 		path: "/",
 		id: ROOT_ROUTE_ID,
 		Component: LayoutRoot,
-		children: baseRoutes,
+		children: [...baseRoutes, ...accessRoutes],
 		loader: ({ request }) => {
 			/**
 			 * @zh 初次加载路由时，开始进度条动画

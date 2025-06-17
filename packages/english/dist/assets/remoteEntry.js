@@ -3,13 +3,16 @@ const currentImports = {};
       let moduleMap = {
 "./App":()=>{
       dynamicLoadingCss([], false, './App');
-      return __federation_import('./__federation_expose_App-DDELcmQA.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+      return __federation_import('./__federation_expose_App-rldP3miD.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./IrregularVerbTable":()=>{
       dynamicLoadingCss([], false, './IrregularVerbTable');
-      return __federation_import('./__federation_expose_IrregularVerbTable-YTf_N7TS.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+      return __federation_import('./__federation_expose_IrregularVerbTable-DdGGrbGB.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./ArticlePractice":()=>{
       dynamicLoadingCss([], false, './ArticlePractice');
-      return __federation_import('./__federation_expose_ArticlePractice-Csxrr3Oe.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
+      return __federation_import('./__federation_expose_ArticlePractice-CULSXHm7.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+"./Vocab1200":()=>{
+      dynamicLoadingCss([], false, './Vocab1200');
+      return __federation_import('./__federation_expose_Vocab1200-D3P9ER3d.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
       const seen = {};
       const dynamicLoadingCss = (cssFilePaths, dontAppendStylesToHead, exposeItemName) => {
         const metaUrl = import.meta.url;
@@ -50,7 +53,7 @@ const currentImports = {};
          }
          
           if (dontAppendStylesToHead) {
-            const key = 'css__englishArticle__' + exposeItemName;
+            const key = 'css__english__' + exposeItemName;
             window[key] = window[key] || [];
             window[key].push(href);
             return;

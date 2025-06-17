@@ -211,6 +211,38 @@ const routeNestRouter = {
 	],
 };
 
+const englishGroup = {
+	path: "/english",
+	handle: {
+		order: 10,
+		title: "English",
+		icon: "NodeExpandOutlined",
+	},
+	children: [
+		{
+			path: "/english/irregularVerb",
+			handle: {
+				title: "Irregular Verb",
+				icon: "SisternodeOutlined",
+			},
+		},
+		{
+			path: "/english/article",
+			handle: {
+				title: "Article",
+				icon: "SubnodeOutlined",
+			},
+		},
+		{
+			path: "/english/vocab1200",
+			handle: {
+				title: "vocab1200",
+				icon: "SubnodeOutlined",
+			},
+		},
+	],
+};
+
 export default defineFakeRoute([
 	{
 		url: "/get-async-routes",
@@ -288,6 +320,7 @@ export default defineFakeRoute([
 					//outsideRouter,
 					//personalCenterRouter,
 					routeNestRouter,
+					englishGroup,
 				],
 			);
 		},

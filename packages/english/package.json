@@ -12,7 +12,10 @@
     },
     "dependencies": {
         "react": "workspace:*",
-        "react-dom": "workspace:*"
+        "react-dom": "workspace:*",
+        "chart.js": "workspace:*",
+        "chartjs-plugin-datalabels": "workspace:*",
+        "recharts": "workspace:*"
     },
     "devDependencies": {
         "@originjs/vite-plugin-federation": "1.4.1",
